@@ -1,0 +1,87 @@
+/*.pokemon {
+    margin-top: 2rem;
+    flex-basis: 20%;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+
+.pokemon-name {
+    font-size: larger;
+    letter-spacing: 0.5rem;
+}
+.pokemon-image {
+    margin-top: 1rem;
+    height: 150px;
+    max-height: 80%;
+}
+
+.pokemon:hover {
+    background-color: beige;
+
+}
+*/
+
+.pokemon {
+       position: relative;
+        border-radius: 20px;
+        margin: auto;
+        padding: 1px;
+        /* Creates the glowing border effect */
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        z-index: 1;
+}
+.pokemon:hover {
+    transform: translateY(-15px) scale(1.05);
+    z-index: 10;
+}
+.pokemon-glow{
+    position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px;
+        background: var(--theme-color);
+        opacity: 0;
+        filter: blur(20px);
+        transition: opacity 0.4s ease;
+        z-index: -1;
+}
+.pokemon:hover .pokemon-glow {
+    opacity: 0.5;
+}
+
+.pokemon-content {
+     background: rgba(20, 20, 35, 0.85);
+     backdrop-filter: blur(10px);
+     border: 1px solid rgba(255, 255, 255, 0.05);
+     border-radius: 20px;
+     padding: 2rem 1.5rem;
+     text-align: center;
+     height: 100%;
+     position: relative;
+ }
+
+ .pokemon-image {
+     width: 200px;
+     height: 200px;
+     object-fit: contain;
+     margin-top: -80px;
+     /* Pulls the image out of the top of the card */
+     margin-bottom: 1rem;
+     filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
+     transition: transform 0.4s ease;
+ }
+ .pokemon:hover .pokemon-image{
+        transform: scale(1.15) rotate(3deg);
+    }
+
+.pokemon  a {
+            text-decoration: none;
+            color: white;
+        }

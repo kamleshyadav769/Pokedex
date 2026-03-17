@@ -1,0 +1,159 @@
+/*.pokemon-list-wrapper {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+
+.pokemon-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    
+           
+    
+}
+
+
+.controls button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 1rem;
+}
+*/
+.error-container{
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+        /* ✅ horizontal center */
+        justify-content: center;
+        /* optional vertical center */
+        gap: 1.5rem;
+    
+}
+ .backToHome{
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+    
+        padding: 0.6rem 1.8rem;
+        border-radius: 999px;
+    
+        font-size: 0.95rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    
+        color: #e6e6e6;
+        background: rgba(255, 255, 255, 0.03);
+    
+        border: 2px solid rgba(0, 255, 200, 0.6);
+    
+        cursor: pointer;
+        transition: all 0.25s ease;
+    
+        /* subtle base glow */
+        box-shadow: 0 0 8px rgba(0, 255, 200, 0.3);
+
+        text-decoration: none;
+        }
+    
+        .backToHome:hover {
+            color: white;
+            border-color: #00ffd0;
+    
+            transform: scale(1.05);
+    
+            box-shadow:
+                0 0 10px rgba(0, 255, 200, 0.6),
+                0 0 25px rgba(0, 255, 200, 0.5),
+                0 0 50px rgba(0, 255, 200, 0.4);
+        }
+    
+        .backToHome:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 8px rgba(0, 255, 200, 0.4);
+        }
+    
+        .backToHome span {
+            font-size: 1.2rem;
+        }
+.error-message{
+    margin: 2rem auto;
+        padding: 1rem 1.5rem;
+        max-width: 500px;
+    
+        background: rgba(255, 0, 0, 0.08);
+        border: 1px solid rgba(255, 0, 0, 0.2);
+        border-radius: 10px;
+    
+        color: #ff6b6b;
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 500;
+    
+        backdrop-filter: blur(10px);
+    
+}
+.pokemon-wrapper {
+       display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 3rem;
+        padding: 4rem 10%;
+        max-width: 1400px;
+        margin: 0 auto;
+}
+
+.controls {
+   
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            margin-top: 3rem;
+            
+   
+}
+
+
+.controls button {
+
+      padding: 0.75rem 1.5rem;
+        border-radius: 40px;
+        border: 2rem;
+        background: rgba(38, 38, 67, 0.85);    
+        color: #fff;
+        cursor: pointer;
+       transition: all 0.2s ease;
+
+ 
+       
+}
+.controls button:disabled {/*button jb diasble rhega to uska colour gray rhega*/
+    color: gray;
+}
+
+.controls button:not(:disabled):hover {  /*jb disable nhi ho tb button pr hover kre to uske piche shadow aaye aur botton thoda zoom ho box-shadow: 0 8px 20px rgba(233, 221, 56, 0.888);*/
+   transform: scale(1.05);
+   
+        border-color: #00ffd0;
+        box-shadow:
+            0 0 10px rgba(246, 230, 56, 0.6),
+            0 0 25px rgba(246, 230, 56, 0.5),
+            0 0 50px rgba(246, 230,56, 0.4);
+}
+.controls button:not(:disabled):active {/*jb disable nhi ho tb button pr click kre to button ka colour yellow ho jaye*/
+    background: var(--theme-color);
+   
+        transform: scale(0.95);
+            box-shadow: 0 0 8px rgba(0, 255, 200, 0.4);
+        
+}
+
+
