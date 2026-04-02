@@ -1,32 +1,4 @@
-/*.pokemon-list-wrapper {
-    margin: 2rem auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-    
-}
 
-.pokemon-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-    
-           
-    
-}
-
-
-.controls button {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    margin-left: 1rem;
-}
-*/
 .error-container{
     display: flex;
     flex-direction: column;
@@ -137,6 +109,7 @@
 }
 .controls button:disabled {/*button jb diasble rhega to uska colour gray rhega*/
     color: gray;
+    
 }
 
 .controls button:not(:disabled):hover {  /*jb disable nhi ho tb button pr hover kre to uske piche shadow aaye aur botton thoda zoom ho box-shadow: 0 8px 20px rgba(233, 221, 56, 0.888);*/
@@ -148,12 +121,17 @@
             0 0 25px rgba(246, 230, 56, 0.5),
             0 0 50px rgba(246, 230,56, 0.4);
 }
+            
 .controls button:not(:disabled):active {/*jb disable nhi ho tb button pr click kre to button ka colour yellow ho jaye*/
+
     background: var(--theme-color);
    
         transform: scale(0.95);
             box-shadow: 0 0 8px rgba(0, 255, 200, 0.4);
         
 }
+
+
+
 
 
