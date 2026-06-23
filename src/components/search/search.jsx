@@ -1,7 +1,7 @@
 
 import { useNavigate } from 'react-router-dom';
 import useDebounce from '../../hooks/useDebounce';
-import './Search.css';
+import './search.css';
 
 function Search({updateSearchTerm}) {
     const navigate = useNavigate();
